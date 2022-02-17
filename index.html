@@ -18,7 +18,7 @@
         <h1 class="my-4 text-center text-primary">Housing Cost and Saving</h1>
         <section class="row g-5 mt-5">
             <div class="col-lg-6">
-                <img class="img-fluid" src="images/shopping-kermit.jpg" alt="">
+                <img class="img-fluid" src="images/money-euro.jpg" alt="">
             </div>
             <div class="col-lg-6 ">
                 <div class="ms-5">
@@ -29,7 +29,7 @@
                         </div>
                         <div class="col-lg-9">
                             <!-- income input value -->
-                            <input class="input" type="number" id="income-input" placeholder="" />
+                            <input class="input" type="number" value="1000" id="income-input" placeholder="" />
                         </div>
                     </div>
                     <!-- all expenses -->
@@ -39,7 +39,7 @@
                             <p>Food:</p>
                         </div>
                         <div class="col-lg-9">
-                            <input class="input" type="number" id="food-input" placeholder="" />
+                            <input class="input" type="number" value="20" id="food-input" placeholder="" />
                         </div>
                     </div>
                     <div class="row">
@@ -47,7 +47,7 @@
                             <p>Rent:</p>
                         </div>
                         <div class="col-lg-9">
-                            <input class="input" type="number" id="rent-input" placeholder="" />
+                            <input class="input" type="number" value="50" id="rent-input" placeholder="" />
                         </div>
                     </div>
                     <div class="row">
@@ -55,7 +55,7 @@
                             <p>Clothes:</p>
                         </div>
                         <div class="col-lg-9">
-                            <input class="input" type="number" id="clothes-input" placeholder="" />
+                            <input class="input" type="number" value="30" id="clothes-input" placeholder="" />
                         </div>
                     </div>
                     <!-- calculate button for expenses  -->
@@ -73,7 +73,7 @@
                             <p class="text-center">Save:</p>
                         </div>
                         <div class="col-lg-4">
-                            <input id="save-input" class="input w-100" type="number">
+                            <input id="save-input" value="17" class="input w-100" type="number">
                         </div>
                         <div class="col-lg-1">
                             <span>%</span>
@@ -88,8 +88,15 @@
                     <h5 class="fw-bolder text-center mb-5">Remaining Balance: <span id="remaining-balance">2000</span>
                     </h5>
                 </div>
+                <div class="notify-section">
+                    <p id="notify-fail" class="notify">❌ Pin Didn't Match, Please try
+                        again</p>
+                    <p id="notify-success" class="notify">✅ Pin Matched... Secret door is opening
+                        for you</p>
+                </div>
             </div>
         </section>
+        </div>
     </header>
 
     <!-- javacsript link -->
