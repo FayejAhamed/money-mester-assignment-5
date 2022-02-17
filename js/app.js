@@ -14,6 +14,22 @@ function expensesInput() {
     const totalBalance = document.getElementById('total-balance').innerText = incomeInput - totalExpenses;
     // console.log(totalBalance.innerText)
 }
+
+// save function 
+function saveAmount() {
+    const saveInputText = document.getElementById('save-input');
+    const saveInput = parseFloat(saveInputText.value);
+    const incomeInputText = document.getElementById('income-input');
+    const incomeInput = parseFloat(incomeInputText.value);
+    const savingAmount = document.getElementById('save-amount');
+    const totalSavingAmount = incomeInput / saveInput;
+    console.log(totalSavingAmount)
+
+    savingAmount.innerText = totalSavingAmount;
+
+}
+
+
 // calculate button 
 document.getElementById('calculate-button').addEventListener('click', function () {
     // console.log(iputFeild)
@@ -23,3 +39,7 @@ document.getElementById('calculate-button').addEventListener('click', function (
 })
 
 // save button 
+document.getElementById('save-button').addEventListener('click', function () {
+    console.log('clicked save button')
+    saveAmount();
+})
