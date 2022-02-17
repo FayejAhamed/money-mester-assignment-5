@@ -1,0 +1,19 @@
+.calculate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculate1{
+    width: 180px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin-right: 50px;
+}
+.input{
+    border: none;
+    background-color:#DCDCDC;
+    border-radius: 2px;   
+}
