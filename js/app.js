@@ -19,6 +19,9 @@ function expensesInput() {
     else if (totalInputExpenses < 0) {
         alert('Plese provide a positive number')
     }
+    else if (isNaN(totalInputExpenses)) {
+        alert('You are required fill up all field! plese go back and try again')
+    }
     return totalExpenses;
 }
 function income() {
@@ -42,8 +45,14 @@ function saveAmount() {
     const totalBalance = parseFloat(totalBalanceText.innerText);
     const remainingBalance = document.getElementById('remaining-balance').innerText = totalBalance - totalSavingAmount;
     // error message 
-    if (remainingBalance > 0) {
-        alert('You have very little money')
+    if (totalSavingAmount > totalBalance) {
+        alert("You don't have enough money in your account")
+    }
+    if (saveInput < 0 && totalSavingAmount < 0) {
+        alert("You can't have negative value in this field")
+    }
+    else if (isNaN(totalSavingAmount && remainingBalance)) {
+        alert('You are required fill up all field! plese go back and try again')
     }
 }
 // calculate button 

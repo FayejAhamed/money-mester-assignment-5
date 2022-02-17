@@ -1,3 +1,7 @@
+.bg-color {
+    background-color: #F8F8F8;
+   border-radius: 5px;
+}
 .calculate{
     display: flex;
     justify-content: center;
